@@ -1,0 +1,19 @@
+[project]
+name = "pipeline-xray"
+version = "0.1.0"
+description = "AI-assisted diagnostics for CI/CD pipelines: DORA-style metrics, bottleneck detection and actionable recommendations."
+readme = "README.md"
+license = "MIT"
+license-files = ["LICENSE"]
+authors = [
+    { name = "Pedro Rubacow", email = "179653524+pedrorubacow@users.noreply.github.com" }
+]
+requires-python = ">=3.12"
+dependencies = []
+
+[project.scripts]
+pipeline-xray = "pipeline_xray:main"
+
+[build-system]
+requires = ["uv_build>=0.11.8,<0.12.0"]
+build-backend = "uv_build"
